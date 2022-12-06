@@ -4,7 +4,6 @@ int main()
 {
     char ch[100];
     scanf("%s", ch);
-    char ch_new[100];
     int index_new = 0;
     for (int i = 0; i < strlen(ch); i++)
     {
@@ -15,13 +14,8 @@ int main()
         }
         else
         {
-            ch_new[index_new] = ch[i];
             index_new++;
+            printf(".%c", ch[i]);
         }
-    }
-    ch_new[index_new] = '\0';
-    for (int i = 0; i < strlen(ch_new); i++)
-    {
-        printf(".%c", ch_new[i]);
     }
 }
