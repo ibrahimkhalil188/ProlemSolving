@@ -13,6 +13,7 @@ int main()
             sum = sum + array[i][j];
         }
     }
+    printf("%d", sum);
     if (sum == 0)
     {
         printf("YES");
@@ -23,3 +24,8 @@ int main()
     }
     return 0;
 }
+
+/* 3
+0 2 -2
+1 -1 3
+-3 0 0 */
